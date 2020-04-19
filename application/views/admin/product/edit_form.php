@@ -76,6 +76,15 @@
 								</div>
 							</div>
 
+							<div class="form-group">
+								<label for="name">Expired_Date*</label>
+								<textarea class="form-control <?php echo form_error('description') ? 'is-invalid':'' ?>"
+								 name="expired_date" placeholder="Product expired date..."><?php echo $product->expired_date?></textarea>
+								<div class="invalid-feedback">
+									<?php echo form_error('expired_date') ?>
+								</div>
+							</div>
+
 							<input class="btn btn-success" type="submit" name="btn" value="Save" />
 						</form>
 
